@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: .8rem;
-    background-color: var(--color-blue-dark);
+    background: linear-gradient(to bottom, rgba(7,33,75, 1), rgba(7,33,75, .8))
 }
 
 @media only screen and (max-width) {
@@ -34,7 +34,7 @@
 .navbar__items {
     /* Displaying navbar menus */
     list-style: none;
-    color: var(--color-blue-light-3);
+    color: var(--color-gray-light-2);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -66,7 +66,7 @@
 .navbar__item:hover:not(:first-child)::after,
 .navbar__item:focus:not(:first-child)::after {
     color: var(--color-orange-light-2);
-    transform: scale(1.03);
+    transform: scale(1.0);
 }
 
 .navbar__item:not(:first-child) {
