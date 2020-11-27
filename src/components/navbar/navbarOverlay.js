@@ -9,8 +9,8 @@ const NavbarOverlay = () => {
                 <li className="navbar-overlay__item navbar-overlay__item-2">الخدمات</li>
                 <li className="navbar-overlay__item navbar-overlay__item-3">الدورات</li>
                 <li className="navbar-overlay__item navbar-overlay__item-4">التدريب</li>
-                <li className="navbar-overlay__item navbar-overlay__item-5">المدونة</li>
                 <li className="navbar-overlay__item navbar-overlay__item-6">حول شركتنا</li>
+                <li className="navbar-overlay__item navbar-overlay__item-5">المدونة</li>
             </ul>
         </nav>
     )

@@ -38,25 +38,57 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* column-gap: .8rem; */
     font-size: 2rem;
     line-height: 2rem;
     height: 100%;
 }
 
-.navbar__item:not(:first-child) {
-    /* Displaying navbar menus */
-    margin-left: 2rem;
+.navbar__item {
+    cursor: pointer;
+    position: relative;
+    transition: all .2s;
 }
 
-.navbar__item:nth-child(2) {
+.navbar__item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 120%;
+    height: .1rem;
+    width: 100%;
+    background-color: var(--color-orange-light-2);
+    transform-origin: center;
+    transform: scale(0);
+    transition: all .2s;
+}
+
+.navbar__item:hover:not(:first-child),
+.navbar__item:hover:not(:first-child)::after,
+.navbar__item:focus:not(:first-child)::after {
+    color: var(--color-orange-light-2);
+    transform: scale(1.03);
+}
+
+.navbar__item:not(:first-child) {
+    /* Displaying navbar menus */
+    margin-left: 4rem;
+}
+
+.navbar__item:nth-child(1) {
     color: var(--primary-color-blue);
+    cursor: default;
 }
 
 .navbar__logo {
     /* Displaying navbar logo */
     height: 100%;
-    margin-left: 12rem;
+    margin-left: 8rem;
+    cursor: pointer;
+    filter: brightness(150%);
+}
+
+.navbar__logo:hover {
+    filter: brightness(140%);
 }
 
 /* Navbar on screen < 900 ******************************************************************* */
@@ -102,7 +134,27 @@
     display: grid;
     align-items: center;
     border: .05rem solid var(--primary-color-blue);
-    /* transition: all .2s ease-in-out; */
+    cursor: pointer;
+}
+
+.navbar-overlay__item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: .1rem;
+    width: 20%;
+    background-color: var(--color-orange-light-2);
+    transform-origin: left;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+.navbar-overlay__item:not(:last-child):hover,
+.navbar-overlay__item:not(:last-child):hover::after,
+.navbar-overlay__item:not(:last-child):focus::after {
+    color: var(--color-orange-light-2);
+    transform: scale(1);
 }
 
 /* Menus Hidden ************************ */
@@ -128,6 +180,7 @@
 
 .navbar-overlay__item-5 {
     color: var(--primary-color-blue);
+    cursor: default;
     transform: translateX(100%);
     transition: all .4s ease-in-out;
 }
@@ -161,10 +214,4 @@
 
 .show-menu .navbar-overlay__item-6 {
     transform: translateX(0%);
-}
-
-.navbar-overlay__logo {
-    /* Displaying navbar-overlay logo */
-    height: 100%;
-    margin-left: 12rem;
 }
