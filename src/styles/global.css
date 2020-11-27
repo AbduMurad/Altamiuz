@@ -1,0 +1,56 @@
+/* Lato font family */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+/* Amiri, Scheherazada font family */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade:wght@400;700&display=swap');
+
+:root {
+    /* Fonts */
+    --font-family-eng: 'Lato', sans-serif;
+    --font-family-ar-1: 'Amiri', serif;
+    --font-family-ar-2: 'Scheherazade', serif;
+
+
+    /* Colors */
+    --primary-color-blue: #22457D;
+    --color-blue-dark: #07214B;
+    --color-blue-light-1: #0C4AAD;
+    --color-blue-light-2: #3178EB;
+    --color-blue-light-3: #6AA3FF;
+
+    --secondary-color-orange: #C98C0E;
+    --color-orange-dark: #A16D01;
+    --color-orange-light-1: #FFAC00;
+    --color-orange-light-2: #FFD47A;
+    --color-orange-light-3: #FFECC3;
+
+    --color-gray: #8D9CB5;
+    --color-gray-dark-1: #677998;
+    --color-gray-dark-2: #445878;
+    --color-gray-light-1: #A3B6D6;
+    --color-gray-light-2: #DCE7FA;
+}
+
+html {
+    font-size: 62.5%; /* 10px/16px *100 */
+}
+
+body {
+    font-family: var(--font-family-ar-1);
+    color: var(--primary-color-blue);
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+::selection {
+    background-color: var(--primary-color-blue);
+    color: var(--color-orange-light-3);
+}
