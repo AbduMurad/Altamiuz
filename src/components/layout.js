@@ -17,9 +17,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="header">
-        <button className="btn btn-primary">تواصل معنا</button>
-        <Navbar />
         <MenuIcon />
+        <Navbar />
+        <button className="btn btn-primary">تواصل معنا</button>
       </div>
       <NavbarOverlay />
       

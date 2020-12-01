@@ -6,8 +6,8 @@
   padding: 0 4rem;
   cursor: pointer;
   outline: none;
-  background: linear-gradient(270deg, #FFC348 0%, #FFAC00 32.81%, #FFAC00 71.35%, #FFCD64 100%);
-  
+  /* background: linear-gradient(270deg, #FFC348 0%, #FFAC00 32.81%, #FFAC00 71.35%, #FFCD64 100%); */
+  background: #EA8023;
   /* Contact Us */
   font-family: var(--font-family-ar-1);
   font-weight: bold;

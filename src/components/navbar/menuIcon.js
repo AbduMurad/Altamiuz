@@ -3,13 +3,6 @@ import "./menuIcon.css"
 
 const MenuIcon = () => {
 
-    const menuBtn = document.getElementById("menu-btn")
-    const navOverlay = document.getElementById("navbar-overlay__items")
-    const menuBtnToggle = () => {
-        menuBtn.classList.toggle("change")
-        navOverlay.classList.toggle("show-menu")
-    }
-
     return (
         <button id="menu-btn" onClick={menuBtnToggle} onKeyDown={menuBtnToggle}>
             <div className="bar1"></div>
@@ -18,6 +11,37 @@ const MenuIcon = () => {
         </button>
     )
 }
+
+// Show and hide navbar menus
+
+// Changing Navbar menu icon shape
+export const menuBtnToggle = () => {
+    // Navbar menu icon
+    const menuBtn = document.getElementById("menu-btn")
+    // Navbar overlay 
+    const navOverlay = document.querySelector(".navbar-overlay")
+    // Navbar menu list
+    const navOverlayItems = document.getElementById("navbar-overlay__items")
+    
+    menuBtn.classList.toggle("change")
+
+    // Show navbar menu overlay
+    navOverlay.classList.toggle("on-top")
+    navOverlayItems.classList.toggle("show-menu")
+}
+
+export const hideNavMenu = () => {
+    // Navbar menu icon
+    const menuBtn = document.getElementById("menu-btn")
+    // Navbar overlay 
+    const navOverlay = document.querySelector(".navbar-overlay")
+    // Navbar menu list
+    const navOverlayItems = document.getElementById("navbar-overlay__items")
+    menuBtn.classList.remove("change")
+    navOverlay.classList.remove("on-top")
+    navOverlayItems.classList.remove("show-menu")
+}
+
 
 
 export default MenuIcon

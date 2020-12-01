@@ -1,0 +1,68 @@
+.our-vision__container {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 4rem 2rem;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #11273B;
+    color: #fff;
+    transform: skewY(-4deg)
+}
+
+@media only screen and (max-width: 80rem) {
+    .our-vision__container {
+        flex-direction: column-reverse;
+    }
+}
+
+.our-vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: skewY(4deg)
+}
+
+
+.our-vision__title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    align-self: start;
+}
+
+.our-vision__paragraph {
+    font-size: 2.4rem;
+    padding: 0 3rem;
+    margin-bottom: 3rem;
+    align-self: start;
+}
+
+@media only screen and (max-width: 90rem) {
+    .our-vision__paragraph {
+        font-size: 2rem;
+    }
+
+    .our-vision__title,
+    .our-vision__paragraph {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.our-vision__process {
+    height: 100%;
+    background: url(../../images/enLogoBg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    padding-left: .5rem;
+    transform: scale(.9) skewY(4deg);
+}
+
+.svg-shape {
+    position: relative;
+}
