@@ -10,7 +10,7 @@ const ServicesSection = () => {
         const blurRight = document.querySelector(".blur-right")
         const blurLeft = document.querySelector(".blur-left")
 
-        if (((direction === "left")? (servicesItems.scrollWidth + servicesItems.scrollLeft) <= servicesItems.clientWidth: (servicesItems.scrollWidth + servicesItems.scrollLeft) === servicesItems.scrollWidth)) {
+        if (((direction === "left")? (Math.floor(servicesItems.scrollWidth + servicesItems.scrollLeft)) <= servicesItems.clientWidth: (servicesItems.scrollWidth + servicesItems.scrollLeft) === servicesItems.scrollWidth)) {
             (direction === "left")?
             blurLeft.setAttribute("style", "visibility: hidden; opacity: 0; display: none;"):
             blurRight.setAttribute("style", "visibility: hidden; opacity: 0; display: none;")
@@ -54,6 +54,13 @@ const ServicesSection = () => {
                     <li><Card Item={Items[4]}/></li>
                     <li><Card Item={Items[5]}/></li>
                     <li><Card Item={Items[6]}/></li>
+                    <li><Card Item={Items[7]}/></li>
+                    <li><Card Item={Items[8]}/></li>
+                    <li><Card Item={Items[9]}/></li>
+                    <li><Card Item={Items[10]}/></li>
+                    <li><Card Item={Items[11]}/></li>
+                    <li><Card Item={Items[12]}/></li>
+                    <li><Card Item={Items[13]}/></li>
                 </ul>
                 <button className="blur-circle blur-left" onClick={leftArrowPaddle} onKeyDown={leftArrowPaddle} aria-label="Mute volume"><i className="arrow left"></i></button>
             </div>
@@ -79,6 +86,21 @@ export const Items = [
     },
     {
         img: {src: Img, alt: "حماية قواعد البيانات"},
+    title: "توفير خدمات كبير موظفي أمن المعلومات CISO AS A SERVICE",
+    description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+    },
+    {
+        img: {src: Img, alt: "حماية قواعد البيانات"},
+    title: "تنفيذ نظام إدارة أمن المعلومات آيزو 27001:2013",
+    description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+    },
+    {
+        img: {src: Img, alt: "حماية قواعد البيانات"},
+    title: "تنفيذ نظام استمرارية الأعمال آيزو 22301:2012",
+    description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+    },
+    {
+        img: {src: Img, alt: "حماية قواعد البيانات"},
     title: "تنفيذ متطلبات نظام حماية بطاقات الدفع الائتمانية PCIDSS",
     description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
     },
@@ -95,6 +117,26 @@ export const Items = [
     {
         img: {src: Img, alt: "حماية قواعد البيانات"},
     title: "الاستشارات الخاصة بنظم التشفير والحماية",
+    description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+    },
+    {
+        img: {src: Img, alt: "حماية قواعد البيانات"},
+    title: "تقييمات نقاط الضعف واختبار الاختراقات",
+    description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+    },
+    {
+        img: {src: Img, alt: "حماية قواعد البيانات"},
+    title: "تقييم نقاط الضعف باستخدام تقنيات الهندسة الاجتماعية",
+    description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+    },
+    {
+        img: {src: Img, alt: "حماية قواعد البيانات"},
+    title: "طيف واسع من حلول أمن المعلومات",
+    description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+    },
+    {
+        img: {src: Img, alt: "حماية قواعد البيانات"},
+    title: "تقديم برامج التوعية الأمنية",
     description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
     },
 

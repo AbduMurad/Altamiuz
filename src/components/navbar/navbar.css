@@ -12,7 +12,7 @@
     z-index: 500;
 }
 
-@media only screen and (max-width) {
+@media only screen and (max-width: 900px) {
     .header {
         padding: .8rem 1.6rem;
     }
@@ -119,23 +119,21 @@
 /* Navbar on screen < 900 ******************************************************************* */
 .navbar-overlay {
     height: calc(100vh - 8rem);
-    opacity: 0;
-    visibility: hidden;
-    display: none;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    position: fixed;
+    z-index: -100;
 }
 
 @media only screen and (max-width: 900px) {
 
     .on-top {
-        opacity: 1;
-        visibility: visible;
-        display: block;
-        position: fixed;
-        width: 50%;
         z-index: 100;
+        width: 50%;
         right: 0;
         top: 8rem;
-
+        transition: all .2s;
     }
 }
 

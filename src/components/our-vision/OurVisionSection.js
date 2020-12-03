@@ -9,10 +9,10 @@ const OurVision = ({ data }) => {
         <StaticQuery
             query = {graphql`
                     query imgQuery {
-                        file(relativePath: {eq: "ourWay.png"}) {
+                        fluidImage: file(relativePath: {eq: "ourWay.png"}) {
                             childImageSharp {
-                                fixed(width: 400) {
-                                    ...GatsbyImageSharpFixed
+                                fluid(maxWidth: 583) {
+                                    ...GatsbyImageSharpFluid
                                 }
                             }
                         }
@@ -29,7 +29,7 @@ const OurVision = ({ data }) => {
                         <button className="hero__heading btn" id="hero__cta">تواصل معنا</button>
                     </div>
                     <div className="our-vision__process">
-                        <Img fixed={data.file.childImageSharp.fixed} alt="" />
+                        <Img fluid={data.fluidImage.childImageSharp.fluid} alt="Our Vision Process" />
                     </div>
                 </div>
             )}

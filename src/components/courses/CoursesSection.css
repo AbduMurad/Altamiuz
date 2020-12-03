@@ -1,0 +1,18 @@
+.courses {
+    padding-top: 12rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 12rem;
+}
+
+.courses__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.courses_items {
+
+}
