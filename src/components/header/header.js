@@ -1,10 +1,27 @@
 import React from "react"
 import "./header.css"
+import BackgroundImage from "gatsby-background-image"
+import { graphql, useStaticQuery } from "gatsby"
 
 
 const Header = () => {
+
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: {eq: "Hero-ar.jpg"}) {
+        childImageSharp {
+          fluid(maxWidth: 1500, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  const ImageData = [`linear-gradient(269.69deg, rgba(12, 74, 173, 0.5) 0.23%, rgba(7, 33, 75, 0.5) 99.72%)`, data.file.childImageSharp.fluid, ]
+  
   return (
-    <div className="hero" id="home">
+    <BackgroundImage Tag="section" className="hero" id="home" fluid={ImageData}>
       <div className="hero__right-side">
         <h1 className="hero__heading hero__heading-title">التميز</h1>
         <h2 className="hero__heading hero__heading-discription">للاستشارات وأمن المعلومات</h2>
@@ -14,7 +31,7 @@ const Header = () => {
         </div>
       </div>
       <div className="hero__left-side"></div>
-    </div>
+    </BackgroundImage>
   )
 }
 export default Header

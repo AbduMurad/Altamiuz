@@ -6,6 +6,8 @@ import ServiceSection from "../components/services/ServicesSection"
 import OurVisionSection from "../components/our-vision/OurVisionSection"
 import TrainingSection from "../components/training/TrainingSection"
 import CoursesSection from "../components/courses/CoursesSection"
+import CeoQoute from "../components/stakeholders/CeoQoute"
+import Partners from "../components/stakeholders/Partners"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +17,8 @@ const IndexPage = () => (
     <OurVisionSection />
     <TrainingSection />
     <CoursesSection />
+    <CeoQoute />
+    <Partners />
   </Layout>
 )
 

@@ -1,0 +1,141 @@
+/* Font Catamaran to display the huge qoutation mark */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+.stakeholders {
+    min-height: 50vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 4rem;
+    padding: 8rem 16rem;
+    margin-top: 16rem;
+    background: linear-gradient(to bottom, rgba(220,231,250, 1) 50%, rgba(220,231,250, 1));
+    color: rgba(17, 39, 59, 1);
+    /* transform: skewY(-4deg); */
+}
+
+
+.ceo-word {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    /* transform: skewY(4deg); */
+}
+
+
+.qoutation {
+    font-size: 3rem;
+    position: relative;
+    padding: 0 8rem 0 0;
+    margin-top: 4rem;
+    /* font-family: var(--font-family-ar-2); */
+    font-weight: 500;
+}
+
+.qoutation-mark{
+    position: absolute;
+    right: 4rem;
+    top: -20rem;
+    opacity: .1;
+    color: var(--color-grey-light-2);
+    font-size: 44rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.ceo-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 8rem;
+}
+
+.ceo-image{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.ceo-title{
+    font-size: 1.6rem;
+}
+
+
+/* Partners ********************************************************************** */
+
+.partners {
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-heading {
+    text-align: center;
+    font-size: 4.4rem;
+    align-self: end;
+    text-shadow: 0 .2rem .2rem rgba(17, 39, 59, .4);
+}
+
+.partners-images {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16rem;
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+}
+
+.partner-info {
+    display: grid;
+    justify-items: center;
+}
+
+.partner-image {
+    width: 45rem;
+    height: 25rem;
+    border-radius: 4rem;
+    border: .01rem solid rgba(17, 39, 59, 1);
+    box-shadow: 0 1rem .5rem rgba(17, 39, 59, .4);
+}
+
+.partner-name {
+    width: 20rem;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: -2.5rem;
+    position: relative;
+    z-index: 5;
+    border-radius: .4rem;
+    background-color: rgba(17, 39, 59, .8);
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .stakeholders {
+        padding: 8rem 2rem;
+    }
+
+    .ceo-word {
+        flex-direction: column;
+    }
+
+    .ceo-info {
+        margin: 0;
+    }
+
+    .qoutation {
+        padding: 0;
+        margin-bottom: 4rem;
+    }
+    
+    .partners-images {
+        grid-template-columns: 1fr;
+    }
+    
+    .partner-info {
+        margin-bottom: 4rem;
+    }
+}
