@@ -9,7 +9,7 @@ const ContactUs = () => {
   return (
     <div className="contact-us" id="contact-us">
         <h1 className="section__heading">تواصل معنا</h1>
-        <form class="form" name="contact-form" acceptCharset="utf-8" action="https://formspree.io/f/moqpnorj" method="post">
+        <form className="form" name="contact-form" acceptCharset="utf-8" action="https://formspree.io/f/moqpnorj" method="post">
             <div className="form-group">
               <label htmlFor="name" className="label">الاسم</label>
               <input type="text" name="name" id="name" placeholder="الاسم واللقب(اختياري)" className="input" required />
@@ -23,7 +23,7 @@ const ContactUs = () => {
             <textarea rows={5} name="message" id="message" className="input" required defaultValue={""} />
             </div>
             <input type="hidden" name="_subject" id="email-subject" defaultValue="Contact Form Submission" />
-          <input type="submit" Value="إرسال" className="btn form-btn" />
+          <input type="submit" value="إرسال" className="btn form-btn" />
         </form>
     </div>
   )

@@ -26,7 +26,7 @@ const OurVision = ({ data }) => {
                         " توفير بوتقة محلية تقدم الحلول في مجال أمن المعلومات، وتجمع أهم الخبرات في ليبيا تحت جسم الشركة حتى نكون المظلة التي توفر الخدمات والأشخاص المؤهلين لتغطية حاجة السوق الليبي.
                         ونحن ندعو كافة المتخصصين والمهتمين باعتبار أن مساحة المشاركة الفعلية والمعنوية مفتوحة للمشاركة من خلالها بأي شكل من أشكال التعاون الذي يرونه مناسب ليتم ضبطه لاحقا بالشكل التنظيمي والقانوني الذي سيحفظ حقوق زبائن الشركة.
                         "</p>
-                        <button className="hero__heading btn" id="hero__cta"><Link href="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button>
+                        <button className="hero__heading btn" id="hero__cta"><Link to="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button>
                     </div>
                     <div className="our-vision__process">
                         <Img fluid={data.fluidImage.childImageSharp.fluid} alt="Our Vision Process" />

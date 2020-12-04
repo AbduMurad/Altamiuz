@@ -27,7 +27,7 @@ const CeoQoute = () => {
                     <h6 className="ceo-title">م. صلاح الدين علي الشتيوي<br/>المدير التنفيذي</h6>
                 </div>
             </div>
-            <button className="hero__heading btn" id="hero__cta"><Link href="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button>
+            <button className="hero__heading btn" id="hero__cta"><Link to="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button>
         </div>
     )
 }
