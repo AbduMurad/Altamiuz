@@ -10,6 +10,7 @@
     font-size: 4rem;
     align-self: end;
     width: 80%;
+    text-shadow: 0 .2rem .2rem rgba(17, 39, 59, .4);
 }
 
 .services__container {
@@ -27,8 +28,8 @@
 
 .blur-circle {
     opacity: 0;
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 100%;
     background-color: rgba(17, 39, 59, 1);
     position: absolute;

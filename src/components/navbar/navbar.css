@@ -1,3 +1,4 @@
+/* Class name for a div in the layout */
 .header {
     /* Arranging the logo, contact Us button, and navbar menus */
     display: flex;
@@ -104,9 +105,10 @@
 }
 
 .navbar__item > .navbar__logo,
-.navbar__item > .navbar__logo > img {
+.navbar__item > .navbar__logo {
     /* Displaying navbar logo */
-    height: 100%;
+    /* height: 6rem;
+    width: 6rem; */
     margin-left: 8rem;
     cursor: pointer;
     filter: brightness(130%);
@@ -189,36 +191,36 @@
 
 /* Menus Hidden ************************ */
 .navbar-overlay__item-1 {
-    transform: translateX(100%);
+    transform: translateX(1000%);
     transition: all .2s ease-in-out;
 }
 
 .navbar-overlay__item-2 {
-    transform: translateX(100%);
+    transform: translateX(1000%);
     transition: all .25s ease-in-out;
 }
 
 .navbar-overlay__item-3 {
-    transform: translateX(100%);
+    transform: translateX(1000%);
     transition: all .3s ease-in-out;
 }
 
 .navbar-overlay__item-4 {
-    transform: translateX(100%);
+    transform: translateX(1000%);
     transition: all .35s ease-in-out;
 }
 
 .navbar-overlay__item-5 {
     color: var(--primary-color-blue);
     cursor: default;
-    transform: translateX(100%);
+    transform: translateX(1000%);
     transition: all .4s ease-in-out;
 }
 
 
 
 .navbar-overlay__item-6 {
-    transform: translateX(100%);
+    transform: translateX(1000%);
     transition: all .45s ease-in-out;
 }
 

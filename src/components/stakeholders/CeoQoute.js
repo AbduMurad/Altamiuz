@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import "./StakeholdersSection.css"
 
 const CeoQoute = () => {
@@ -27,7 +27,7 @@ const CeoQoute = () => {
                     <h6 className="ceo-title">م. صلاح الدين علي الشتيوي<br/>المدير التنفيذي</h6>
                 </div>
             </div>
-            <button className="hero__heading btn" id="hero__cta">تواصل معنا</button>
+            <button className="hero__heading btn" id="hero__cta"><Link href="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button>
         </div>
     )
 }

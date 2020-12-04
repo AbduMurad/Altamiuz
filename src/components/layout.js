@@ -9,8 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import Navbar from "./navbar/navbar"
 import NavbarOverlay from "./navbar/navbarOverlay"
-import "./layout.css"
 import MenuIcon from "./navbar/menuIcon"
+import Footer from "./footer/Footer"
+import { Link } from "gatsby"
+import "./layout.css"
 
 const Layout = ({ children }) => {
 
@@ -19,12 +21,13 @@ const Layout = ({ children }) => {
       <div className="header">
         <MenuIcon />
         <Navbar />
-        <button className="btn btn-primary">تواصل معنا</button>
+        <button className="btn btn-primary"><Link href="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button>
       </div>
       <NavbarOverlay />
       
         <main>{children}</main>
         <footer>
+          <Footer />
         </footer>
     </>
   )

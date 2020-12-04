@@ -1,7 +1,7 @@
 import React from "react"
 import "./header.css"
 import BackgroundImage from "gatsby-background-image"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
       file(relativePath: {eq: "Hero-ar.jpg"}) {
         childImageSharp {
           fluid(maxWidth: 1500, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -27,7 +27,7 @@ const Header = () => {
         <h2 className="hero__heading hero__heading-discription">للاستشارات وأمن المعلومات</h2>
         <div className="hero__heading">
           <h4 className="hero__heading hero__heading-cta">قم بتأمين وحماية بيانات مؤسستك<br/>باتباع أفضل الأساليب<br/>وأكثرها موثوقية</h4>
-          <button className="hero__heading btn" id="hero__cta">تواصل معنا</button>
+          <button className="hero__heading btn" id="hero__cta"><Link href="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button>
         </div>
       </div>
       <div className="hero__left-side"></div>
