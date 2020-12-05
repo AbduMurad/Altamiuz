@@ -8,6 +8,7 @@ import TrainingSection from "../components/training/TrainingSection"
 import CoursesSection from "../components/courses/CoursesSection"
 import CeoQoute from "../components/stakeholders/CeoQoute"
 import Partners from "../components/stakeholders/Partners"
+
 import ContactUs from "../components/contact-us/ContactUs"
 
 const IndexPage = () => (
