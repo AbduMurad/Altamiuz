@@ -21,8 +21,8 @@ const Partners = () => {
     }
   `)
 
-  const dataProtectImage = data.allFile.edges[1].node.childImageSharp.fluid
-  const xertianceImage = data.allFile.edges[0].node.childImageSharp.fluid
+  const xertianceImage = data.allFile.edges[1].node.childImageSharp.fluid
+  const dataProtectImage = data.allFile.edges[0].node.childImageSharp.fluid
 
     return (
         <div className="partners">

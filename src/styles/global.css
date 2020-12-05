@@ -49,6 +49,7 @@ body {
     color: var(--primary-color-blue);
     box-sizing: border-box;
     background: rgba(220,231,250, .1);
+    max-width: 100%;
 }
 
 *,

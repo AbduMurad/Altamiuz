@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className="footer-contact-us">
                     <h4 className="footer-title">تواصل معنا</h4>
                     <a href="MAILTO:ceo@altamiuz.ly">CEO@Altamiuz.ly</a>
-                    <a href="Tel:+218917373202" dir="ltr">+218 91 737-3202</a>
+                    <a href="Tel:+218917373202" className="phone-number">+218 91 737-3202</a>
                     <h4>طرابلس - ليبيا</h4>
                 </div>
                 <div className="footer-links">

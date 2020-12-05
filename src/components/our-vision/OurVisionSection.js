@@ -9,7 +9,7 @@ const OurVision = ({ data }) => {
         <StaticQuery
             query = {graphql`
                     query imgQuery {
-                        fluidImage: file(relativePath: {eq: "ourWay.png"}) {
+                        fluidImage: file(relativePath: {eq: "arLogo.png"}) {
                             childImageSharp {
                                 fluid(maxWidth: 583) {
                                     ...GatsbyImageSharpFluid

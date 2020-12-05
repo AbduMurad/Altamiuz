@@ -10,10 +10,12 @@
     grid-auto-flow: column;
     justify-items: start;
     align-items: center;
+    padding-top: 2rem;
 }
 
 .footer-logo {
     opacity: .2;
+    justify-self: center;
 }
 
 .footer-title {
@@ -36,6 +38,10 @@
 
 .footer-links {
     display: grid;
+}
+
+.phone-number {
+    direction: ltr;
 }
 
 .copyrite {
