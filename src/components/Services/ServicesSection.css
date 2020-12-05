@@ -85,11 +85,11 @@
     scroll-behavior: smooth;
 }
 
-@media (hover: none) {
+/* @media (hover: none) {
     .services__items {
         width: 100vh;
     }
-}
+} */
 
 .services__items > * {
     scroll-snap-align: start;
