@@ -20,9 +20,8 @@
     grid-template-columns: .5% 99% .5%;
     align-items: stretch;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     position: relative;
-    scroll-behavior: smooth;
 }
 
 .services__container:hover > .blur-circle {
