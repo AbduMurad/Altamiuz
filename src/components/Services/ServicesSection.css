@@ -19,6 +19,8 @@
     display: grid;
     grid-template-columns: .5% 99% .5%;
     align-items: stretch;
+    width: 100%;
+    overflow-x: hidden;
     position: relative;
     scroll-behavior: smooth;
 }
@@ -120,3 +122,4 @@
 .left:hover {
     transform: rotate(135deg) scale(1.1)  translate(-.2rem, -.6rem);
 }
+

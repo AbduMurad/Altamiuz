@@ -12,8 +12,10 @@
     transition: all .2s;
 }
 
-.card:hover {
-    transform: translateY(-.15rem);
+@media (hover: hover) {
+    .card:hover {
+        transform: translateY(-.15rem);
+    }
 }
 
 .card-image {
