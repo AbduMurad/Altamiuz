@@ -12,7 +12,7 @@ const ContactUs = () => {
         <form className="form" name="contact-form" acceptCharset="utf-8" action="https://formspree.io/f/moqpnorj" method="post">
             <div className="form-group">
               <label htmlFor="name" className="label">الاسم</label>
-              <input type="text" name="name" id="name" placeholder="الاسم واللقب(اختياري)" className="input" required />
+              <input type="text" name="name" id="name" placeholder="الاسم واللقب" className="input" required />
             </div>
             <div className="form-group">
             <label htmlFor="email-address" className="label">البريد الالكتروني</label>

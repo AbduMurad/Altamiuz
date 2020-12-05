@@ -8,7 +8,7 @@ const Footer = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            file (relativePath: {eq: "enLogo.png"}) {
+            file (relativePath: {eq: "arLogo.png"}) {
                 childImageSharp {
                     fixed (width: 250, height: 250) {
                         ...GatsbyImageSharpFixed_withWebp
