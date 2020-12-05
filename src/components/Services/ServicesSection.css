@@ -88,6 +88,7 @@
 @media (hover: none) {
     .services__items {
         width: 100vw;
+        scroll-snap-type: none;
     }
 }
 
