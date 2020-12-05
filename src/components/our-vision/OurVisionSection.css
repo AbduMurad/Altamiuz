@@ -1,6 +1,6 @@
 .our-vision__container {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 2rem 4rem 2rem;
     margin: 0 auto;
     margin-top: 8rem;
@@ -15,6 +15,12 @@
 
 .our-vision__container > * {
     margin-top: 8rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .our-vision__container {
+        grid-template-columns: 1fr 40rem;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -33,7 +39,7 @@
     .our-vision__process {
         grid-row: 1 / 2;
         height: 100%;
-        width: auto;
+        width: 60%;
     }
 }
 
@@ -47,15 +53,15 @@
 
 .our-vision__title {
     font-size: 4rem;
-    margin-bottom: 3rem;
     align-self: start;
 }
 
 .our-vision__paragraph {
     font-size: 2.4rem;
     padding: 0 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     align-self: start;
+    font-family: var(--font-family-ar-2);
 }
 
 @media only screen and (max-width: 90rem) {
@@ -85,4 +91,29 @@
 
 .our-vision__process > * {
     width: 100%;
+}
+
+/* "Added" values ********************************************************************************************* */
+
+.our-values {
+    align-self: start;
+    font-size: 2.4rem;
+    padding: 0 4rem;
+    font-family: var(--font-family-ar-2);
+}
+
+.our-values::before {
+    content: attr(aria-label);
+    font-size: 110%;
+    font-weight: bold;
+    margin-right: -3rem;
+    font-family: var(--font-family-ar-1);
+}
+
+.our-vision__paragraph:nth-of-type(2){
+    font-size: 2.4rem;
+    padding: 0 8rem;
+    align-self: center;
+    text-align: center;
+    margin-top: 1.5rem;
 }

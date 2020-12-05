@@ -44,13 +44,16 @@ html {
     }
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--font-family-ar-1);
     color: var(--primary-color-blue);
     box-sizing: border-box;
     background: rgba(220,231,250, .1);
-    overflow-x: hidden;
-
 }
 
 *,
