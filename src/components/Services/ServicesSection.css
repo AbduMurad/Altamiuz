@@ -87,7 +87,7 @@
 
 @media (hover: none) {
     .services__items {
-        width: 100%;
+        width: 50vh;
     }
 }
 
