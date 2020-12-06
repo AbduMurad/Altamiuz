@@ -43,6 +43,7 @@
     font-family: var(--font-family-ar-2);
     padding: 0 2rem;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .card-description::-webkit-scrollbar {
