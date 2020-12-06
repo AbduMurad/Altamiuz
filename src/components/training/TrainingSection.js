@@ -8,56 +8,61 @@ const TrainingSection = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            file (relativePath: {eq: "enLogo.png"}) {
-                childImageSharp {
-                    fixed (width: 216) {
-                        ...GatsbyImageSharpFixed_withWebp
+            allFile(filter: {relativePath: {in: ["courses-1.jpg", "courses-2.jpg", "courses-3.jpg", "courses-4.jpg", "courses-5.png", "courses-6.jpg"]}}) {
+              edges {
+                node {
+                  childImageSharp {
+                    fixed(width: 200, height: 100) {
+                      ...GatsbyImageSharpFixed_withWebp
                     }
+                  }
                 }
+              }
             }
-        }
+          }
     `)
 
-    const image = data.file.childImageSharp.fixed
+    const image = data.allFile.edges
+    console.log(image)
 
     const Items = [
         {
-            img: {src: image, alt: "تدريبات الشركة"},
-        title: "مقدمة نظام إدارة أمن المعلومات آيز 27001:2013",
+            img: {src: image[1].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
+        title: "مقدمة نظام إدارة أمن المعلومات آيزو 27001:2013",
         description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
         },
         {
-            img: {src: image, alt: "تدريبات الشركة"},
-        title: "أساسيات نظام إدارة أمن المعلومات آيز 27001:2013",
+            img: {src: image[1].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
+        title: "أساسيات نظام إدارة أمن المعلومات آيزو 27001:2013",
         description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
         },
         {
-            img: {src: image, alt: "تدريبات الشركة"},
-        title: "كبير منفذي نظام إدارة أمن المعلومات آيز 27001:2013",
+            img: {src: image[1].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
+        title: "كبير منفذي نظام إدارة أمن المعلومات آيزو 27001:2013",
         description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
         },
         {
-            img: {src: image, alt: "تدريبات الشركة"},
+            img: {src: image[0].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
         title: "كبير مدققي نظام إدارة أمن المعلومات",
         description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
         },
         {
-            img: {src: image, alt: "تدريبات الشركة"},
+            img: {src: image[5].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
         title: "كبير منفذي نظام إدارة استمرارية الأعمال",
         description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
         },
         {
-            img: {src: image, alt: "تدريبات الشركة"},
+            img: {src: image[2].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
         title: "كبير مديري إدارة المخاطر آيزو 31000",
         description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
         },
         {
-            img: {src: image, alt: "تدريبات الشركة"},
+            img: {src: image[3].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
         title: "نظام حماية معلومات حاملي البطاقات الائتمانية",
         description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
         },
         {
-            img: {src: image, alt: "تدريبات الشركة"},
+            img: {src: image[4].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
         title: "التوعية الأمنية",
         description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
         },

@@ -1,7 +1,7 @@
 import React from "react"
 import "./OurVisionSection.css"
 import Img from "gatsby-image"
-import { Link, graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 
 
 const OurVision = ({ data }) => {
@@ -9,10 +9,10 @@ const OurVision = ({ data }) => {
         <StaticQuery
             query = {graphql`
                     query imgQuery {
-                        fluidImage: file(relativePath: {eq: "arLogo.png"}) {
+                        fluidImage: file(relativePath: {eq: "lettermarkLogo1.png"}) {
                             childImageSharp {
-                                fluid(maxWidth: 583) {
-                                    ...GatsbyImageSharpFluid
+                                fluid {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
@@ -30,8 +30,8 @@ const OurVision = ({ data }) => {
                             <li>الانفتاح والتنوع</li>
                             <li>التحسين المستمر</li>
                         </ul>
-                        <p className="our-vision__paragraph">كما تدعم شركة التميز الأهداف العالمية السبعة عشر للتنمية المستدامة<br/>بكل الوسائل المادية والمعنوية لأجل ليبيا وأهلها</p>
-                        <button className="hero__heading btn" id="hero__cta"><Link to="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button>
+                        {/* <p className="our-vision__paragraph">كما تدعم شركة التميز الأهداف العالمية السبعة عشر للتنمية المستدامة<br/>بكل الوسائل المادية والمعنوية لأجل ليبيا وأهلها</p> */}
+                        {/* <button className="hero__heading btn" id="our-vision-cta"><Link to="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button> */}
                     </div>
                     <div className="our-vision__process">
                         <Img fluid={data.fluidImage.childImageSharp.fluid} alt="Our Vision Process" />

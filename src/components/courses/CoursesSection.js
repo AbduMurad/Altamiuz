@@ -7,9 +7,9 @@ const TrainingSection = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            file (relativePath: {eq: "enLogo.png"}) {
+            file (relativePath: {eq: "lettermarkLogo1.png"}) {
                 childImageSharp {
-                    fixed (width: 216) {
+                    fixed (width: 150) {
                         ...GatsbyImageSharpFixed_withWebp
                     }
                 }

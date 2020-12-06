@@ -2,41 +2,42 @@ import React from "react"
 import "./Footer.css"
 import Img from "gatsby-image"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarked } from '@fortawesome/free-solid-svg-icons'
+import { faCopyright } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 
 const Footer = () => {
-
     const data = useStaticQuery(graphql`
         query {
-            file (relativePath: {eq: "arLogo.png"}) {
+            file (relativePath: {eq: "lettermarkLogo1.png"}) {
                 childImageSharp {
-                    fixed (width: 250, height: 250) {
-                        ...GatsbyImageSharpFixed_withWebp
+                    fluid(quality:100) {
+                        ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
         }
     `)
 
-    const image = data.file.childImageSharp.fixed
+    const image = data.file.childImageSharp.fluid
 
     return (
         <div className="footer">
             <div className="footer-menu">
                 <div className="footer-contact-us">
                     <h4 className="footer-title">تواصل معنا</h4>
-                    <a href="MAILTO:ceo@altamiuz.ly">CEO@Altamiuz.ly</a>
-                    <a href="Tel:+218917373202" className="phone-number">+218 91 737-3202</a>
-                    <h4>طرابلس - ليبيا</h4>
+                    <a href="https://www.linkedin.com/company/altamiuz/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} aria-label="Mute volume"/></a>
+                    <a href="MAILTO:info@altamiuz.ly"><FontAwesomeIcon icon={faEnvelope} style={{marginRight: "1rem"}}/>info@Altamiuz.ly</a>
+                    <a href="Tel:+218917373202" className="phone-number"><FontAwesomeIcon icon={faMobileAlt} style={{marginRight: "1rem"}}/>+218 91 737-3202</a>
+                    <h4>طرابلس - ليبيا<FontAwesomeIcon icon={faMapMarked} style={{marginRight: "1rem"}}/></h4>
                 </div>
-                <div className="footer-links">
-                    <Link to="#services__section" className="footer-title">الخدمات</Link>
-                    <Link to="#training__section" className="footer-title">التدريب</Link>
-                    <Link to="#courses__section" className="footer-title">الدورات</Link>
-                </div>
-                <Link to="#" className="footer-logo"><Img fixed={image} alt="Altamiuz Icon" /></Link>
+                <Link to="#" className="footer-logo"><Img fluid={image} alt="Altamiuz Icon" /></Link>
             </div>
-            <p className="copyrite">جميع الحقوق محفوظة لصالح شركة التميز<br/>&copy;Altamiuz</p>
+            <p className="copyrite">جميع الحقوق محفوظة لصالح شركة التميز <FontAwesomeIcon icon={faCopyright} /> Altamiuz</p>
         </div>
     )
 }
