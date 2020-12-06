@@ -1,0 +1,32 @@
+.we-are__section {
+    padding: 10rem;
+    margin-bottom: 8rem;
+}
+
+.we-are__title {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.we-are__paragraph {
+    font-size: 2rem;
+    line-height: 4rem;
+    width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .we-are__section {
+        padding: 10rem 5rem;
+    }
+
+    .we-are__paragraph  {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .we-are__section {
+        padding: 10rem 2rem;
+    }
+}

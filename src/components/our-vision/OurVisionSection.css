@@ -10,7 +10,8 @@
     /* background: #11273B;
     color: #fff; */
     
-    background: linear-gradient(to bottom, rgba(220,231,250, 1) 50%, rgba(220,231,250, 1));
+    /* background: linear-gradient(to bottom, rgba(220,231,250, 1) 50%, ); */
+    background: rgba(220,231,250, 1);
     color: rgba(17, 39, 59, 1);
     /* transform: skewY(-4deg) */
 }

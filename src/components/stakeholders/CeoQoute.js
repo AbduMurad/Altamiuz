@@ -20,13 +20,11 @@ const CeoQoute = () => {
 
     return (
         <div className="stakeholders">
-            {/* <div className="ceo-word"> */}
                 <div className="ceo-info">
                     <Img fluid={ceoImage} className="ceo-image"/>
                     <h6 className="ceo-title">عقيد متقاعد أ.م صلاح الدين الشتيوي<br/>المدير التنفيذي</h6>
                 </div>
                 <p className="qoutation"><i className="qoutation-mark">"</i>لقد تعلمت طيلة مسيرة عملي بين القطاعين العام والخاص العسكري والمدني وتنفيذي لعشرات المشاريع التي لها علاقة بالاتصالات وأمن المعلومات أو تلك المشاريع التدريبية القتالية مع القوات البحرية لحلف الناتو منذ العام 2003 كجزء من العديد من الفرق أن أهم عنصر يمكننا من خلاله الحكم على نجاح او فشل المشاريع هو الإدارة ووضوح سير العمليات وستكون كل الاعمال الفنية وكل وسائل التقنية الأخرى وسائل مساعدة للوصول لذلك النجاح.</p>
-            {/* </div> */}
             <button className="hero__heading btn" id="ceo-cta"><Link to="#contact-us" style={{textDecoration: "none"}}>تواصل معنا</Link></button>
         </div>
     )

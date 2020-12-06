@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 .stakeholders {
-    /* min-height: 50vh; */
     display: grid;
     grid-template-columns: min-content 1fr;
     justify-content: center;
@@ -12,18 +11,7 @@
     margin-top: 24rem;
     background: linear-gradient(to bottom, rgba(220,231,250, 1) 50%, rgba(220,231,250, 1));
     color: rgba(17, 39, 59, 1);
-    /* background: var(--color-blue-dark-1);
-    color: #fff; */
 }
-
-
-/* .ceo-word {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-} */
-
 
 .qoutation {
     /* grid-column: 2 / span 1; */
@@ -63,6 +51,7 @@
 
 .ceo-title{
     font-size: 1.6rem;
+    text-align: center;
 }
 
 #ceo-cta {
