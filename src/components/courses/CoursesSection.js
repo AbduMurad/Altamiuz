@@ -46,7 +46,7 @@ const TrainingSection = () => {
 
     return (
         <section className="courses" id="courses__section">
-            <h2 className="section__heading">دوراتنا الأمنية المعتمدة وبأحدث المناهج التعليمية</h2>
+            <h2 className="section__heading" id="courses__section__heading">دوراتنا الأمنية المعتمدة وبأحدث المناهج التعليمية</h2>
             <div className="courses__container">
                 <ul className="courses__items">
                     <li><Card Item={Items[0]}/></li>

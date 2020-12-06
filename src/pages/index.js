@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 import Header from '../components/header/header'
 import ServicesSection from "../components/Services/ServicesSection"
 import OurVisionSection from "../components/our-vision/OurVisionSection"
@@ -16,8 +16,10 @@ const IndexPage = () => (
     <Header />
     <ServicesSection />
     <OurVisionSection />
-    <TrainingSection />
-    <CoursesSection />
+    <div className="courses-training-section">
+      <TrainingSection />
+      <CoursesSection />
+    </div>
     <CeoQoute />
     <Partners />
     <ContactUs />

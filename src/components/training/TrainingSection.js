@@ -1,87 +1,51 @@
 import React from "react"
 import "./TrainingSection.css"
-import Card from "../card/Card"
-import { graphql, useStaticQuery } from "gatsby"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheckCircle } from "@fortawesome/free-regular-svg-icons"
 
 const TrainingSection = () => {
 
-    const data = useStaticQuery(graphql`
-        query {
-            allFile(filter: {relativePath: {in: ["courses-1.jpg", "courses-2.jpg", "courses-3.jpg", "courses-4.jpg", "courses-5.png", "courses-6.jpg"]}}) {
-              edges {
-                node {
-                  childImageSharp {
-                    fixed(width: 200, height: 100) {
-                      ...GatsbyImageSharpFixed_withWebp
-                    }
-                  }
-                }
-              }
-            }
-          }
-    `)
-
-    const image = data.allFile.edges
-    console.log(image)
-
     const Items = [
         {
-            img: {src: image[1].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
-        title: "مقدمة نظام إدارة أمن المعلومات آيزو 27001:2013",
-        description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+        title: "مقدمة نظام إدارة أمن المعلومات آيزو 27001:2013"
         },
         {
-            img: {src: image[1].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
-        title: "أساسيات نظام إدارة أمن المعلومات آيزو 27001:2013",
-        description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+        title: "أساسيات نظام إدارة أمن المعلومات آيزو 27001:2013"
         },
         {
-            img: {src: image[1].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
-        title: "كبير منفذي نظام إدارة أمن المعلومات آيزو 27001:2013",
-        description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+        title: "كبير منفذي نظام إدارة أمن المعلومات آيزو 27001:2013"
         },
         {
-            img: {src: image[0].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
-        title: "كبير مدققي نظام إدارة أمن المعلومات",
-        description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+        title: "كبير مدققي نظام إدارة أمن المعلومات"
         },
         {
-            img: {src: image[5].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
-        title: "كبير منفذي نظام إدارة استمرارية الأعمال",
-        description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+        title: "كبير منفذي نظام إدارة استمرارية الأعمال"
         },
         {
-            img: {src: image[2].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
-        title: "كبير مديري إدارة المخاطر آيزو 31000",
-        description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+        title: "كبير مديري إدارة المخاطر آيزو 31000"
         },
         {
-            img: {src: image[3].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
-        title: "نظام حماية معلومات حاملي البطاقات الائتمانية",
-        description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+        title: "نظام حماية معلومات حاملي البطاقات الائتمانية"
         },
         {
-            img: {src: image[4].node.childImageSharp.fixed, alt: "تدريبات الشركة"},
-        title: "التوعية الأمنية",
-        description: "باتباع معيار ISO وأحدث التقنيات المستخدمة لتشفير وتخزين المعلومات."
+        title: "التوعية الأمنية"
         },
     
     ]
 
     return (
         <section className="training" id="training__section">
-            <h2 className="section__heading">تدريباتنا معتمدة وبإشراف أفضل الكفاءات في المجال الأمني</h2>
+            <h2 className="section__heading" id="training__section__heading">التدريبات اللي نقدمها في شركة التميز</h2>
             <div className="training__container">
                 <ul className="training__items">
-                    <li><Card Item={Items[0]}/></li>
-                    <li><Card Item={Items[1]}/></li>
-                    <li><Card Item={Items[2]}/></li>
-                    <li><Card Item={Items[3]}/></li>
-                    <li><Card Item={Items[4]}/></li>
-                    <li><Card Item={Items[5]}/></li>
-                    <li><Card Item={Items[6]}/></li>
-                    <li><Card Item={Items[7]}/></li>
+                    <li className="training__item"><FontAwesomeIcon icon={faCheckCircle} style={{marginLeft: "1rem"}} />{Items[0].title}</li>
+                    <li className="training__item"><FontAwesomeIcon icon={faCheckCircle} style={{marginLeft: "1rem"}} />{Items[1].title}</li>
+                    <li className="training__item"><FontAwesomeIcon icon={faCheckCircle} style={{marginLeft: "1rem"}} />{Items[2].title}</li>
+                    <li className="training__item"><FontAwesomeIcon icon={faCheckCircle} style={{marginLeft: "1rem"}} />{Items[3].title}</li>
+                    <li className="training__item"><FontAwesomeIcon icon={faCheckCircle} style={{marginLeft: "1rem"}} />{Items[4].title}</li>
+                    <li className="training__item"><FontAwesomeIcon icon={faCheckCircle} style={{marginLeft: "1rem"}} />{Items[5].title}</li>
+                    <li className="training__item"><FontAwesomeIcon icon={faCheckCircle} style={{marginLeft: "1rem"}} />{Items[6].title}</li>
+                    <li className="training__item"><FontAwesomeIcon icon={faCheckCircle} style={{marginLeft: "1rem"}} />{Items[7].title}</li>
                 </ul>
             </div>
         </section>
