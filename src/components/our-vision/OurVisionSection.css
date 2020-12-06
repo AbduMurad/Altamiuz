@@ -1,6 +1,6 @@
 .our-vision__container {
     /* height: 100vh; */
-    padding: 2rem 4rem 2rem;
+    padding: 2rem 8rem 2rem;
     margin: 0 auto;
     margin-top: 8rem;
     display: grid;
@@ -18,6 +18,7 @@
 
 
 .our-vision {
+    padding: 0 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
