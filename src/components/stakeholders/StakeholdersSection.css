@@ -1,176 +1,179 @@
 /* Font Catamaran to display the huge qoutation mark */
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap");
 
 .stakeholders {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    justify-content: center;
-    justify-items: center;
-    row-gap: 4rem;
-    padding: 4rem 16rem;
-    margin-top: 24rem;
-    background: linear-gradient(to bottom, rgba(220,231,250, 1) 50%, rgba(220,231,250, 1));
-    color: rgba(17, 39, 59, 1);
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  justify-content: center;
+  justify-items: center;
+  row-gap: 4rem;
+  padding: 4rem 16rem;
+  margin-top: 24rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(220, 231, 250, 1) 50%,
+    rgba(220, 231, 250, 1)
+  );
+  color: rgba(17, 39, 59, 1);
 }
 
 .qoutation {
-    /* grid-column: 2 / span 1; */
-    font-size: 3rem;
-    position: relative;
-    padding: 0 8rem 0 0;
-    margin-top: 4rem;
-    font-family: var(--font-family-ar-1);
-    font-weight: 500;
+  /* grid-column: 2 / span 1; */
+  font-size: 3rem;
+  position: relative;
+  padding: 0 8rem 0 0;
+  margin-top: 4rem;
+  font-family: var(--font-family-ar-1);
+  font-weight: 500;
 }
 
-.qoutation-mark{
-    position: absolute;
-    right: 10rem;
-    top: -20rem;
-    opacity: .1;
-    color: var(--color-grey-light-2);
-    font-size: 44rem;
-    font-family: 'Catamaran', sans-serif;
+.qoutation-mark {
+  position: absolute;
+  right: 10rem;
+  top: -20rem;
+  opacity: 0.1;
+  color: var(--color-grey-light-2);
+  font-size: 44rem;
+  font-family: "Catamaran", sans-serif;
 }
 
-.ceo-info{
-    grid-row: 1 / span 2;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-left: 8rem;
+.ceo-info {
+  grid-row: 1 / span 2;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 8rem;
 }
 
-.ceo-image{
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+.ceo-image {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-.ceo-title{
-    font-size: 1.6rem;
-    text-align: center;
+.ceo-title {
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 #ceo-cta {
-    /* grid-column: 2 / span 1; */
-    height: 4rem;
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-top: 1.5rem;
+  /* grid-column: 2 / span 1; */
+  height: 4rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
 }
 
 /* Partners ********************************************************************** */
 
 .partners {
-    height: 80vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .partners-heading {
-    text-align: center;
-    font-size: 4.4rem;
-    align-self: end;
-    text-shadow: 0 .2rem .2rem rgba(17, 39, 59, .4);
+  text-align: center;
+  font-size: 4.4rem;
+  align-self: end;
+  text-shadow: 0 0.2rem 0.2rem rgba(17, 39, 59, 0.4);
 }
 
 .partners-images {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 16rem;
-    justify-content: center;
-    justify-items: center;
-    width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16rem;
+  justify-content: center;
+  justify-items: center;
+  width: 80%;
 }
 
 .partner-info {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 }
 
 .partner-image {
-    width: 45rem;
-    height: 25rem;
-    border-radius: 4rem;
-    border: .01rem solid rgba(17, 39, 59, 1);
-    box-shadow: 0 1rem .5rem rgba(17, 39, 59, .4);
+  width: 45rem;
+  height: 25rem;
+  border-radius: 4rem;
+  border: 0.01rem solid rgba(17, 39, 59, 1);
+  box-shadow: 0 1rem 0.5rem rgba(17, 39, 59, 0.4);
 }
 
 .partner-name {
-    width: 20rem;
-    font-size: 2.4rem;
-    text-align: center;
-    margin-top: -2.5rem;
-    position: relative;
-    z-index: 5;
-    border-radius: .4rem;
-    background-color: rgba(17, 39, 59, .8);
-    color: #fff;
+  width: 20rem;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: -2.5rem;
+  position: relative;
+  z-index: 5;
+  border-radius: 0.4rem;
+  background-color: rgba(17, 39, 59, 0.8);
+  color: #fff;
 }
 
 @media only screen and (max-width: 1200px) {
-    .stakeholders {
-        padding: 4rem 4rem;
-    }
+  .stakeholders {
+    padding: 4rem 4rem;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    .partners {
-        margin: 8rem 0;
-    }
+  .partners {
+    margin: 8rem 0;
+  }
 
-    .partners-images {
-        grid-template-columns: 1fr;
-    }
+  .partners-images {
+    grid-template-columns: 1fr;
+  }
 
-    .partner-info {
-        margin-bottom: 4rem;
-    }
+  .partner-info {
+    margin-bottom: 4rem;
+  }
 
-    .partner-image {
-        width: 30rem;
-        height: 20rem;
-    }
+  .partner-image {
+    width: 30rem;
+    height: 20rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
+  .stakeholders {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
 
-    .stakeholders {
-        grid-template-columns: 1fr;
-        row-gap: 1rem;
-    }
+  .ceo-word {
+    flex-direction: column;
+  }
 
-    .ceo-word {
-        flex-direction: column;
-    }
+  .ceo-info {
+    margin: 0;
+  }
 
-    .ceo-info {
-        margin: 0;
-    }
+  .qoutation {
+    padding: 0;
+    margin-bottom: 4rem;
+    grid-column: 1 / -1;
+  }
 
-    .qoutation {
-        padding: 0;
-        margin-bottom: 4rem;
-        grid-column: 1 / -1;
-    }
-    
-    #ceo-cta {
-        grid-column: 1 / -1;
-    }
-    
-    .partners-images {
-        grid-template-columns: 1fr;
-    }
+  #ceo-cta {
+    grid-column: 1 / -1;
+  }
+
+  .partners-images {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .partner-image {
-        width: 30rem;
-        height: 20rem;
-    }
+  .partner-image {
+    width: 30rem;
+    height: 20rem;
+  }
 }

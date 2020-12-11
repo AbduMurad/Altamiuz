@@ -1,251 +1,247 @@
 /* Class name for a div in the layout */
 .header {
-    /* Arranging the logo, contact Us button, and navbar menus */
-    display: flex;
-    width: 100%;
-    height: 8rem;
-    justify-content: space-between;
-    align-items: center;
-    padding: .8rem;
-    /* background: linear-gradient(to bottom, rgba(7,33,75, 1), rgba(7,33,75, .8)) */
-    background: var(--color-blue-dark-1);
-    position: fixed;
-    z-index: 500;
+  /* Arranging the logo, contact Us button, and navbar menus */
+  display: flex;
+  width: 100%;
+  height: 8rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  /* background: linear-gradient(to bottom, rgba(7,33,75, 1), rgba(7,33,75, .8)) */
+  background: var(--color-blue-dark-1);
+  position: fixed;
+  z-index: 500;
 }
 
 @media only screen and (max-width: 900px) {
-    .header {
-        padding: .8rem 1.6rem;
-    }
+  .header {
+    padding: 0.8rem 1.6rem;
+  }
 }
 
 /* Navbar Menus *************************************************************************************************** */
 .navbar {
-    /* Placing the navbar menus list */
-    flex: 1;
-    justify-self: flex-end;
-    height: 100%;
+  /* Placing the navbar menus list */
+  flex: 1;
+  justify-self: flex-end;
+  height: 100%;
 }
 
 @media only screen and (max-width: 900px) {
-    .navbar {
-        opacity: 0;
-        visibility: hidden;
-        display: none;
-    }
+  .navbar {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
 }
 
 .navbar__items {
-    /* Displaying navbar menus */
-    list-style: none;
-    color: var(--color-gray-light-2);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 2rem;
-    line-height: 2rem;
-    height: 100%;
+  /* Displaying navbar menus */
+  list-style: none;
+  color: var(--color-gray-light-2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  height: 100%;
 }
 
 .navbar__item {
-    cursor: pointer;
-    position: relative;
-    transition: all .2s;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
 }
 
 .navbar__item > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .navbar__item:first-child {
-    height: 100%;
-    cursor: default;
+  height: 100%;
+  cursor: default;
 }
 
-
 .navbar__item::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 120%;
-    height: .1rem;
-    width: 100%;
-    background-color: var(--color-orange-light-2);
-    transform-origin: center;
-    transform: scale(0);
-    transition: all .2s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 120%;
+  height: 0.1rem;
+  width: 100%;
+  background-color: var(--color-orange-light-2);
+  transform-origin: center;
+  transform: scale(0);
+  transition: all 0.2s;
 }
 
 .navbar__item:hover:not(:last-child),
 .navbar__item:hover:not(:last-child)::after,
 .navbar__item:not(:first-child):hover::after,
 .navbar__item:focus:not(:last-child)::after {
-    color: var(--color-orange-light-2);
-    transform: scale(1.0);
+  color: var(--color-orange-light-2);
+  transform: scale(1);
 }
 
 .navbar__item:nth-child(1):hover::after
-.navbar__item:nth-child(1):focus::after {
-    color: var(--color-orange-light-2);
-    transform: scale(5);
+  .navbar__item:nth-child(1):focus::after {
+  color: var(--color-orange-light-2);
+  transform: scale(5);
 }
 
 .navbar__item:first-child:hover::after {
-    transform: scale(0);
+  transform: scale(0);
 }
 
 .navbar__item:not(:first-child) {
-    /* Displaying navbar menus */
-    margin-left: 4rem;
+  /* Displaying navbar menus */
+  margin-left: 4rem;
 }
 
-.navbar__item:nth-child(6) {
-    color: var(--primary-color-blue);
-    cursor: default;
+.navbar__item:last-child {
+  color: var(--primary-color-blue);
+  cursor: default;
 }
 
 .navbar__item > .navbar__logo,
 .navbar__item > .navbar__logo {
-    /* Displaying navbar logo */
-    /* height: 6rem;
+  /* Displaying navbar logo */
+  /* height: 6rem;
     width: 6rem; */
-    margin-left: 8rem;
-    cursor: pointer;
-    filter: brightness(130%);
+  margin-left: 8rem;
+  cursor: pointer;
+  filter: brightness(130%);
 }
 
 .navbar__logo:hover > img {
-    filter: brightness(120%);
+  filter: brightness(120%);
 }
 
 /* Navbar on screen < 900 ******************************************************************* */
 .navbar-overlay {
-    height: calc(100vh - 8rem);
-    opacity: 1;
-    visibility: visible;
-    display: block;
-    position: fixed;
-    z-index: -100;
+  height: calc(100vh - 8rem);
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  position: fixed;
+  z-index: -100;
 }
 
 @media only screen and (max-width: 900px) {
-
-    .on-top {
-        z-index: 100;
-        width: 50%;
-        right: 0;
-        top: 8rem;
-        transition: all .2s;
-    }
+  .on-top {
+    z-index: 100;
+    width: 50%;
+    right: 0;
+    top: 8rem;
+    transition: all 0.2s;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .on-top {
-        width: 100%;
-    }
+  .on-top {
+    width: 100%;
+  }
 }
 
 #navbar-overlay__items {
-    /* Displaying navbar-overlay menus */
-    list-style: none;
-    color: var(--color-blue-light-3);
-    text-align: center;
-    display: grid;
-    align-items: stretch;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    height: 100%;
+  /* Displaying navbar-overlay menus */
+  list-style: none;
+  color: var(--color-blue-light-3);
+  text-align: center;
+  display: grid;
+  align-items: stretch;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  height: 100%;
 }
 
 .navbar-overlay__item {
-    background-color: var(--color-blue-dark);
-    display: grid;
-    align-items: center;
-    border: .05rem solid var(--primary-color-blue);
-    cursor: pointer;
+  background-color: var(--color-blue-dark);
+  display: grid;
+  align-items: center;
+  border: 0.05rem solid var(--primary-color-blue);
+  cursor: pointer;
 }
 
 .navbar-overlay__item > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .navbar-overlay__item::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    height: .1rem;
-    width: 20%;
-    background-color: var(--color-orange-light-2);
-    transform-origin: left;
-    transform: scale(0);
-    transition: all .5s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 0.1rem;
+  width: 20%;
+  background-color: var(--color-orange-light-2);
+  transform-origin: left;
+  transform: scale(0);
+  transition: all 0.5s;
 }
 
 .navbar-overlay__item:not(:last-child):hover,
 .navbar-overlay__item:not(:last-child):hover::after,
 .navbar-overlay__item:not(:last-child):focus::after {
-    color: var(--color-orange-light-2);
-    transform: scale(1);
+  color: var(--color-orange-light-2);
+  transform: scale(1);
 }
 
 /* Menus Hidden ************************ */
 .navbar-overlay__item-1 {
-    transform: translateX(1000%);
-    transition: all .2s ease-in-out;
+  transform: translateX(1000%);
+  transition: all 0.2s ease-in-out;
 }
 
 .navbar-overlay__item-2 {
-    transform: translateX(1000%);
-    transition: all .25s ease-in-out;
+  transform: translateX(1000%);
+  transition: all 0.25s ease-in-out;
 }
 
 .navbar-overlay__item-3 {
-    transform: translateX(1000%);
-    transition: all .3s ease-in-out;
+  transform: translateX(1000%);
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-overlay__item-4 {
-    transform: translateX(1000%);
-    transition: all .35s ease-in-out;
+  transform: translateX(1000%);
+  transition: all 0.35s ease-in-out;
 }
 
 .navbar-overlay__item-5 {
-    color: var(--primary-color-blue);
-    cursor: default;
-    transform: translateX(1000%);
-    transition: all .4s ease-in-out;
+  color: var(--primary-color-blue);
+  cursor: default;
+  transform: translateX(1000%);
+  transition: all 0.4s ease-in-out;
 }
 
-
-
 .navbar-overlay__item-6 {
-    transform: translateX(1000%);
-    transition: all .45s ease-in-out;
+  transform: translateX(1000%);
+  transition: all 0.45s ease-in-out;
 }
 
 /* Showing menus ******************** */
 .show-menu .navbar-overlay__item-1 {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .show-menu .navbar-overlay__item-2 {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .show-menu .navbar-overlay__item-3 {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .show-menu .navbar-overlay__item-4 {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .show-menu .navbar-overlay__item-5 {
-    color: var(--primary-color-blue);
-    transform: translateX(0%);
+  color: var(--primary-color-blue);
+  transform: translateX(0%);
 }
 
 .show-menu .navbar-overlay__item-6 {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
