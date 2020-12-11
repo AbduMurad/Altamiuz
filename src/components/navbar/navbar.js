@@ -24,8 +24,7 @@ const Navbar = () => {
             <ul className="navbar__items">
                 <li className="navbar__item"><Link to="/#" className="navbar__logo"><Img fixed={image} alt="Altamiuz Icon" /></Link></li>
                 <li className="navbar__item"><Link to="/#services__section">الخدمات</Link></li>
-                <li className="navbar__item"><Link to="/#training__section">التدريب</Link></li>
-                <li className="navbar__item"><Link to="/#courses__section">الدورات</Link></li>
+                <li className="navbar__item"><Link to="/#courses__heading">التدريب</Link></li>
                 <li className="navbar__item"><Link to="/about-us">حولنا</Link></li>
                 <li className="navbar__item">المدونة</li>
             </ul>

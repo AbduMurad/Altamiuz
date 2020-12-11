@@ -1,0 +1,20 @@
+.training {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 40rem 10rem;
+}
+
+.training__items {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.courses__items {
+  list-style: none;
+  display: flex;
+}
+
+.course-title {
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}

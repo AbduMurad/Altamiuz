@@ -34,10 +34,17 @@
 
 .courses-training-section {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  /* grid-template-columns: 1fr 1.5fr; */
   align-items: start;
   justify-items: start;
   background: var(--color-blue-dark-1);
+  padding-top: 8rem;
+}
+
+.courses-training-section > h1 {
+  grid-column: 1 / -1;
+  justify-self: center;
+  color: #fff;
 }
 
 @media only screen and (max-width: 1100px) {

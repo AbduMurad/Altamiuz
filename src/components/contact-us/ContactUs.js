@@ -9,7 +9,7 @@ const ContactUs = () => {
   return (
     <div className="contact-us" id="contact-us">
         <h1 className="section__heading">تواصل معنا</h1>
-        <form className="form" name="contact-form" acceptCharset="utf-8" action="https://formspree.io/f/moqpnorj" method="post">
+        <form className="form" name="contact-form" acceptCharset="utf-8" action="https://formspree.io/f/xleoplyy" method="post">
             <div className="form-group">
               <label htmlFor="name" className="label">الاسم</label>
               <input type="text" name="name" id="name" placeholder="الاسم واللقب" className="input" required />

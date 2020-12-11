@@ -2,12 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import WeAre from "../components/about-us/WeAre"
-import Partners from "../components/stakeholders/Partners"
-import ContactUs from "../components/contact-us/ContactUs"
 import AboutUsHeader from "../components/about-us/AboutUsHeader"
 import OurVisionSection from "../components/our-vision/OurVisionSection"
 import SupportedGoals from "../components/about-us/SupportedGoals"
 import ISStandards from "../components/about-us/ISStandards"
+import Partners from "../components/stakeholders/Partners"
+import ContactUs from "../components/contact-us/ContactUs"
 
 
 const IndexPage = () => (

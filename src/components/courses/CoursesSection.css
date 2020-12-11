@@ -1,16 +1,8 @@
 .courses,
 #courses__section {
     margin-top: 6rem;
-    /* padding-top: 6rem; */
     display: grid;
-    justify-items: center;
-    align-items: center;
     row-gap: 4rem;
-}
-.courses__container {
-    padding: 0;
-    margin: 0;
-    width: 100%;
 }
 
 #courses__section__heading {
@@ -18,10 +10,10 @@
     margin-bottom: -8rem;
 }
 
+
 .courses__items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     list-style: none;
     transform: scale(.8);
 }

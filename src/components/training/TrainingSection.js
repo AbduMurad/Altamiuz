@@ -35,7 +35,7 @@ const TrainingSection = () => {
 
     return (
         <section className="training" id="training__section">
-            <h2 className="section__heading" id="training__section__heading">التدريبات اللي نقدمها في شركة التميز</h2>
+            {/* <h2 className="section__heading" id="training__section__heading">التدريبات اللي نقدمها في شركة التميز</h2> */}
             <div className="training__container">
                 <ul className="training__items">
                     <li className="training__item"><FontAwesomeIcon icon={faCheckCircle} style={{marginLeft: "1rem"}} />{Items[0].title}</li>
