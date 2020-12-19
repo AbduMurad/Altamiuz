@@ -1,87 +1,86 @@
 .footer {
-    background: var(--color-blue-dark-1);
-    display: grid;
-    /* row-gap: 2rem; */
-    color: #fff;
-    padding:  0 16rem 2rem;
+  background: var(--color-blue-dark-1);
+  display: grid;
+  /* row-gap: 2rem; */
+  color: #fff;
+  padding: 2rem 16rem 2rem;
 }
 
 .footer-menu {
-    display: grid;
-    grid-auto-flow: column;
-    justify-items: start;
-    align-items: center;
-    /* padding-top: 2rem; */
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: start;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .footer-logo {
-    /* opacity: .2; */
-    justify-self: stretch;
-    width: 50%;
+  /* opacity: .2; */
+  justify-self: stretch;
+  width: 50%;
 }
 
 .footer-title {
-    color: #EA8023;
-    font-size: 2rem;
-    text-decoration: none;
-    margin-bottom: 1rem;
+  color: #ea8023;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
 }
 
 .footer-contact-us {
-    justify-self: center;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    font-size: 1.6rem;
+  justify-self: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 1.6rem;
 }
 
 .footer-contact-us > * {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-contact-us > a {
-    direction: ltr;
-    /* justify-self: end; */
+  direction: ltr;
+  /* justify-self: end; */
 }
 
 .footer-links {
-    display: grid;
+  display: grid;
 }
 
 .copyrite {
-    text-align: center;
-    font-size: 2rem;
-    font-family: var(--font-family-ar-2);
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-family-ar-2);
 }
 
 @media only screen and (max-width: 600px) {
+  .footer-menu {
+    grid-auto-flow: row;
+  }
 
-    .footer-menu {
-        grid-auto-flow: row;
-    }
-    
-    .footer-logo {
-        grid-row: 1 / span 1;
-        justify-self: center;
-    }
+  .footer-logo {
+    grid-row: 1 / span 1;
+    justify-self: center;
+  }
 
-    .footer-links {
-        grid-auto-flow: column;
-        column-gap: 2rem;
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-        justify-self: center;
-        align-self: end;
-    }
+  .footer-links {
+    grid-auto-flow: column;
+    column-gap: 2rem;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: end;
+  }
 
-    .footer-contact-us {
-        grid-column: 1 / span 1;
-        margin-bottom: 2.5rem;
-    }
+  .footer-contact-us {
+    grid-column: 1 / span 1;
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .footer-logo {
-        display: none;
-    }
+  .footer-logo {
+    display: none;
+  }
 }

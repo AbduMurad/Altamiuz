@@ -11,7 +11,7 @@ const Header = () => {
       file(relativePath: {eq: "Hero-ar.jpg"}) {
         childImageSharp {
           fluid(maxWidth: 1500, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
